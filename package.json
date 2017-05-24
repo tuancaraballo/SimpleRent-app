@@ -1,0 +1,12 @@
+{
+  "name": "simplerent",
+  "version": "1.0.0",
+  "description": "First prototype of simplerent",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tuan Anh Tran Caraballo",
+  "license": "ISC"
+}

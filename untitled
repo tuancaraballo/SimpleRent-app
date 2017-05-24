@@ -1,0 +1,89 @@
+<h1 class="page-header">Dashboard</h1>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Head Tenant</th>
+                  <th>Payment Status</th>
+                  <th>Maintenance Request</th>
+                  <th>Complains/Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>456 6th Ave</td>
+                  <td>Charlie Brown</td>
+                  <td>pending</td>
+                  <td><strong>Kitchen faucet leaking</strong></td>
+                  <td>none</td>
+                </tr>
+                <tr>
+                  <td>456 Alma St.</td>
+                  <td>Armanda Balsamo</td>
+                  <td>submitted</td>
+                  <td><strong>roof leaking</strong></td>
+                  <td>none</td>
+                </tr>
+                <tr>
+                  <td>455 Market St.</td>
+                  <td>Gabriela Solano</td>
+                  <td> <strong> overdue</strong></td>
+                  <td><strong>Broken garbage disposal</strong></td>
+                  <td><strong>Needs background check for new roommate</strong></td>
+                </tr>
+                <tr>
+                  <td>257th Stark St.</td>
+                  <td>Wiston Yensi</td>
+                  <td>collected</td>
+                  <td>none</td>
+                  <td><strong>next door neighbor being too loud</strong></td>
+                </tr>
+                <tr>
+                  <td>673 Atherton St.</td>
+                  <td>Cinthia Cabrera</td>
+                  <td>collected</td>
+                  <td><strong>sink is leaking</strong></td>
+                  <td>none</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sub-header">Maintenance Status</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Contractor</th>
+                  <th>Maintenance Request</th>
+                  <th>Status</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>456 6th Ave</td>
+                  <td>Alex Wong</td>
+                  <td>Kitchen faucet leaking</td>
+                  <td>Fixed</td>
+                  <td>$35</td>
+                </tr>
+                <tr>
+                  <td>456 Alma St.</td>
+                  <td>Greg's Roofing LLC</td>
+                  <td>Roof leaking</td>
+                  <td><em>In progress</em></td>
+                  <td>$700</td>
+                </tr>
+                <tr>
+                  <td>455 Market St.</td>
+                  <td><strong>none</strong></td>
+                  <td>Broken garbage disposal</td>
+                  <td><strong>not assigned yet</strong></td>
+                  <td>$65 (estimated)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>

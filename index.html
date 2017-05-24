@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/icons/favicon.ico">
+
+    <title>SimpleRent - Landlord</title>
+
+    <!-- Bootstrap core CSS -->
+   <!--  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Progress circles -->
+    <link href="assets/css/progresscircle.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <!-- <a class="navbar-brand" href="#" title="SimpleRent - Landlord">  -->
+           <!-- padding:0; margin:0; -->
+            <img class="navbar-brand" src="static/images/logo-cropped.png" alt="SimpleRent" style="max-width: 16%; height: auto; display: block; padding:0; margin-left: 9%">
+       <!--    </a> -->
+          
+<!-- height="70" width="100"  -->
+         
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row" style= "margin-bottom:0px;">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-stats"> </span> Overview </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-signal"> </span> Payments</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"> </span> Tenants</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-list-alt"> </span> Applications</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-wrench"> </span> Maintenance</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-home"> </span> Properties</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-file"> </span> Report</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-signal"> </span> Analytics</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-map-marker"> </span> Listing</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-3 col-sm-3 placeholder">
+              <div class="well">
+                  <img src="static/images/csmall1.png" width="100" height="100">
+                  <h4>Collected Payments</h4>
+                  <!-- <span class="text-muted">Something else</span> -->
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 placeholder">
+              <div class="well">
+                  <img src="static/images/csmall2.png" width="100" height="100">
+                  <h4>Pending Payments</h4>
+                  <!-- <span class="text-muted">Something else</span> -->
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 placeholder">
+              <div class="well">
+                  <img src="static/images/csmall3.png" width="100" height="100">
+                  <h4>Submitted Payments</h4>
+                  <!-- <span class="text-muted">Something else</span> -->
+              </div>
+            </div>
+            <div class="col-xs-3 col-sm-3 placeholder">
+              <div class="well">
+                  <img src="static/images/csmall4.png" width="100" height="100">
+                  <h4>Maintenance Budget</h4>
+                  <!-- <span class="text-muted">Something else</span> -->
+              </div>
+            </div>
+          </div>
+
+          <h2 class="sub-header">Notifications</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Head Tenant</th>
+                  <th>Payment Status</th>
+                  <th>Maintenance Request</th>
+                  <th>Complains/Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>456 6th Ave</td>
+                  <td>Charlie Brown</td>
+                  <td>pending</td>
+                  <td><strong>Kitchen faucet leaking</strong></td>
+                  <td>none</td>
+                </tr>
+                <tr>
+                  <td>456 Alma St.</td>
+                  <td>Armanda Balsamo</td>
+                  <td>submitted</td>
+                  <td><strong>roof leaking</strong></td>
+                  <td>none</td>
+                </tr>
+                <tr>
+                  <td>455 Market St.</td>
+                  <td>Gabriela Solano</td>
+                  <td> <strong> overdue</strong></td>
+                  <td><strong>Broken garbage disposal</strong></td>
+                  <td><strong>Needs background check for new roommate</strong></td>
+                </tr>
+                <tr>
+                  <td>257th Stark St.</td>
+                  <td>Wiston Yensi</td>
+                  <td>collected</td>
+                  <td>none</td>
+                  <td><strong>next door neighbor being too loud</strong></td>
+                </tr>
+                <tr>
+                  <td>673 Atherton St.</td>
+                  <td>Cinthia Cabrera</td>
+                  <td>collected</td>
+                  <td><strong>sink is leaking</strong></td>
+                  <td>none</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="sub-header">Maintenance Status</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Contractor</th>
+                  <th>Maintenance Request</th>
+                  <th>Status</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>456 6th Ave</td>
+                  <td>Alex Wong</td>
+                  <td>Kitchen faucet leaking</td>
+                  <td>Fixed</td>
+                  <td>$35</td>
+                </tr>
+                <tr>
+                  <td>456 Alma St.</td>
+                  <td>Greg's Roofing LLC</td>
+                  <td>Roof leaking</td>
+                  <td><em>In progress</em></td>
+                  <td>$700</td>
+                </tr>
+                <tr>
+                  <td>455 Market St.</td>
+                  <td><strong>none</strong></td>
+                  <td>Broken garbage disposal</td>
+                  <td><strong>not assigned yet</strong></td>
+                  <td>$65 (estimated)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <!--  // <script src="../../dist/js/bootstrap.min.js"></script> -->
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
