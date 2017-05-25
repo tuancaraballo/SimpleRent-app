@@ -8,5 +8,10 @@
     "start": "node server.js"
   },
   "author": "Tuan Anh Tran Caraballo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "path": "^0.12.7"
+  }
 }
